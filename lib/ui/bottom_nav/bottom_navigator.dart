@@ -1,6 +1,8 @@
-import 'package:eastern_assignment/controllers/bottom_nav_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../controllers/bottom_nav_controller.dart';
+import '../../utils/eastern_color.dart';
 
 class BottomNavigator extends StatelessWidget {
   BottomNavigator({Key? key}) : super(key: key);
@@ -14,7 +16,7 @@ class BottomNavigator extends StatelessWidget {
         body: _bottomNavCtr
             .currentPage[_bottomNavCtr.currentBottomNavIndex.value],
         bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: const Color(0xFFECD859),
+          selectedItemColor: AppColor.primaryColor,
           unselectedItemColor: const Color(0xFFB8B4B4),
           showSelectedLabels: true,
           showUnselectedLabels: true,

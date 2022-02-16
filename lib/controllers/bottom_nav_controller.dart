@@ -1,17 +1,18 @@
-import 'package:eastern_assignment/ui/category/category_page.dart';
-import 'package:eastern_assignment/ui/curate/curate_page.dart';
-import 'package:eastern_assignment/ui/home/home_page.dart';
-import 'package:eastern_assignment/ui/more/more_page.dart';
-import 'package:eastern_assignment/ui/sale/sale_page.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../ui/category/category_page.dart';
+import '../../ui/curate/curate_page.dart';
+import '../../ui/home/home_page.dart';
+import '../../ui/more/more_page.dart';
+import '../../ui/sale/sale_page.dart';
 
 class BottomNavigatorController extends GetxController {
   // call it self
   static BottomNavigatorController get bottomNavigatorController => Get.find();
   RxInt currentBottomNavIndex = 0.obs;
   final List<Widget> currentPage = <Widget>[
-    const HomePage(),
+    HomePage(),
     const CategoryPage(),
     const CuratePage(),
     const SalePage(),
