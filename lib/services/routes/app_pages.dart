@@ -1,3 +1,4 @@
+import 'package:eastern_assignment/services/binding_services/bottom_nav_binding.dart';
 import 'package:eastern_assignment/services/routes/app_routes.dart';
 import 'package:eastern_assignment/splash.dart';
 import 'package:eastern_assignment/ui/bottom_nav/bottom_navigator.dart';
@@ -13,7 +14,8 @@ class AppPages {
     ),
     GetPage(
       name: Routes.bottomNavigator,
-      page: () => const BottomNavigator(),
+      page: () => BottomNavigator(),
+      binding: BottomNavigatorBinding(),
     ),
   ];
 }
