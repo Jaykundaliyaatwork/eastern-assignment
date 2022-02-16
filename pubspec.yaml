@@ -38,6 +38,7 @@ dependencies:
   sizer: ^2.0.15  #  for responsive ui
   get: ^4.6.1  # state management
   dio: ^4.0.4
+  random_color: ^1.0.6-nullsafety
 
   ## UI
   carousel_slider: ^4.0.0

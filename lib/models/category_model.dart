@@ -16,12 +16,14 @@ class CategoryModel {
         child?.add(Child.fromJson(v));
       });
     }
+    isExpandable = json['child'].length > 0 ? true : false;
   }
 
   String? categoryId;
   String? categoryName;
   String? parentId;
   List<Child>? child;
+  bool isExpandable = false;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
