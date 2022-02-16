@@ -13,7 +13,7 @@ class BottomNavigatorController extends GetxController {
   RxInt currentBottomNavIndex = 0.obs;
   final List<Widget> currentPage = <Widget>[
     HomePage(),
-    const CategoryPage(),
+    CategoryPage(),
     const CuratePage(),
     const SalePage(),
     const MorePage()

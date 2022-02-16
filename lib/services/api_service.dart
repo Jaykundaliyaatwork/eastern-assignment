@@ -60,4 +60,19 @@ class ApiService {
       throw 'home bottom level api error';
     }
   }
+
+  // fetch all categories.
+  Future<Map<String, dynamic>> fetchAllCategoryData() async {
+    try {
+      Response response = await _dio.get('/category.json');
+      if (response.statusCode == 200) {
+        return response.data;
+      } else {
+        throw 'category api error';
+      }
+    } catch (e) {
+      shootLog(e.toString());
+      throw 'category api error';
+    }
+  }
 }

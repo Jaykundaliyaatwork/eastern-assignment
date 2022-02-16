@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import '../../controllers/bottom_nav_controller.dart';
+import '../../controllers/category_controller.dart';
 import '../../controllers/home_controller.dart';
 
 class BottomNavigatorBinding extends Bindings {
@@ -13,5 +14,8 @@ class BottomNavigatorBinding extends Bindings {
 
     /// bind HomeController to Home page
     Get.lazyPut(() => HomeController());
+
+    /// bind CategoryController to Category Page
+    Get.lazyPut(() => CategoryController());
   }
 }
